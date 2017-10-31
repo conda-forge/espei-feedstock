@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.3.post2" %}
-{% set sha256 = "f18e51841dc387673fafceb5ddb8f125d01d8ac3192a597cc60d50c2db9712cd" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "37eafd3f9f855833df7a30e8ff0db77181c4d1e8a62a78e9e1f397cba7ce45ea" %}
 
 package:
   name: {{ name|lower }}
