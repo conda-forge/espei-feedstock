@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "37eafd3f9f855833df7a30e8ff0db77181c4d1e8a62a78e9e1f397cba7ce45ea" %}
+{% set version = "0.3.1.post2" %}
+{% set sha256 = "e99ac61d69a256ac8f62326874a4942c93ea41471387bdb8aecd00f97f6bd6c7" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
-    - espei = espei.run_espei:main
+    - espei = espei.espei_script:main
 
 requirements:
   build:
@@ -43,7 +43,7 @@ test:
     - espei.core_utils
     - espei.datasets
     - espei.plot
-    - espei.run_espei
+    - espei.espei_script
     - espei.utils
   commands:
     - espei -h
