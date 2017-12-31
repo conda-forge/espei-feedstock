@@ -60,6 +60,9 @@ install:
     - cmd: conda.exe config --remove channels defaults
     - cmd: conda.exe config --add channels defaults
     - cmd: conda.exe config --add channels conda-forge
+    # Add the pycalphad upstream channels
+    - cmd: conda.exe config --add channels msys2
+    - cmd: conda.exe config --add channels pycalphad
 
     # Configure the VM.
     - cmd: conda.exe install -n root --quiet --yes conda-forge-build-setup
