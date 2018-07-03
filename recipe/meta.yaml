@@ -35,7 +35,7 @@ requirements:
     - pycalphad >=0.7
     - pyyaml
     - cerberus
-    - mpi4py
+    - mpi4py <3
     - bibtexparser
 
 test:
