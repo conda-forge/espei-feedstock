@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.6.1" %}
-{% set sha256 = "8d2ab9b55490269668da884822df88722c0f96ea21a11b45a888beb1967f8a49" %}
+{% set version = "0.6.2" %}
+{% set sha256 = "47b84957212eb412b9c9973665d92cb34eda1757a9852382c8539911661c115f" %}
 
 package:
   name: {{ name|lower }}
@@ -26,14 +26,14 @@ requirements:
     - python
     - numpy
     - scipy
-    - sympy ==1.1.1
+    - sympy >=1.2
     - six
     - dask >=0.18
     - distributed
     - tinydb >=3
     - scikit-learn
     - emcee
-    - pycalphad >=0.7
+    - pycalphad >=0.7.1
     - pyyaml
     - cerberus
     - mpi4py <3
@@ -47,12 +47,22 @@ test:
     - espei.espei_script
     - espei.mcmc
     - espei.paramselect
+    - espei.error_functions.activity_error
+    - espei.error_functions.zpf_error
+    - espei.error_functions.thermochemical_error
+    - espei.parameter_selection.model_building
+    - espei.parameter_selection.redlich_kister
+    - espei.parameter_selection.selection
+    - espei.parameter_selection.ternary_parameters
+    - espei.parameter_selection.utils
     - espei.plot
     - espei.refdata
     - espei.rstate
+    - espei.sublattice_tools
     - espei.utils
   commands:
     - espei -h
+    - espei --version
 
 about:
   home: http://espei.org
