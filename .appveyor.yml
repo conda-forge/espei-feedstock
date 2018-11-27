@@ -42,6 +42,8 @@ install:
     - cmd: conda.exe config --remove channels defaults
     - cmd: conda.exe config --add channels defaults
     - cmd: conda.exe config --add channels conda-forge
+    # Add pycalphad channel. We shouldn't do this, but there are some required deps for Windows
+    - cmd: conda.exe config --add channels pycalphad
 
     # Configure the VM.
     - cmd: conda.exe install -n root --quiet --yes conda-forge-ci-setup=2
