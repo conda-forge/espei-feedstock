@@ -13,6 +13,7 @@ source:
 
 build:
   noarch: python
+  noarch: python
   number: 0
   entry_points:
     - espei = espei.espei_script:main
