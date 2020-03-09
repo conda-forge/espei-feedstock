@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.7.4" %}
-{% set sha256 = "ecda690515d6fd84acce52ff0f53b369b6d5d3d1fbe262dd462873f524e9b073" %}
+{% set version = "0.7.5" %}
+{% set sha256 = "d73a86d32e13b8820a58a9c0bdd9e876eeb855034b494a74f14922721ce091af" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
     - python
     - setuptools
   run:
-    - python >=3
+    - python >=3.6
     - numpy
     - scipy
     - sympy >=1.3
@@ -32,7 +32,7 @@ requirements:
     - tinydb >=3.8
     - scikit-learn
     - emcee <3
-    - pycalphad >=0.8.1
+    - pycalphad >=0.8.2
     - pyyaml
     - cerberus
     - bibtexparser
@@ -53,6 +53,7 @@ test:
     - pycalphad
   commands:
     - espei -h
+    - espei --version
 
 about:
   home: http://espei.org
