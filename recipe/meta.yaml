@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.7.5" %}
-{% set sha256 = "d73a86d32e13b8820a58a9c0bdd9e876eeb855034b494a74f14922721ce091af" %}
+{% set version = "0.7.6" %}
+{% set sha256 = "371338f1dfea6bd5022ff0df96793962b316a2e21879319badeafe6e60c05c86" %}
 
 package:
   name: {{ name|lower }}
@@ -60,7 +60,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Fitting thermodynamic models with pycalphad.'
+  summary: Fitting thermodynamic models with pycalphad.
   description: |
     ESPEI, or Extensible Self-optimizing Phase Equilibria Infrastructure,
     is a tool for automated thermodynamic database development within the
