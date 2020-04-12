@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.7.6" %}
-{% set sha256 = "371338f1dfea6bd5022ff0df96793962b316a2e21879319badeafe6e60c05c86" %}
+{% set version = "0.7.7" %}
+{% set sha256 = "70526156aee964dd2ceaaac21a06ba6a0ba8ad8efe3ed3c36137a31ff3008eb8" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
     - numpy
     - scipy
     - sympy >=1.3
-    - six
+    - ipopt <3.13
     - dask >=2
     - distributed >=2
     - tinydb >=3.8
