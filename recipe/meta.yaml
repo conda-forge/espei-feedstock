@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.7.7" %}
-{% set sha256 = "70526156aee964dd2ceaaac21a06ba6a0ba8ad8efe3ed3c36137a31ff3008eb8" %}
+{% set version = "0.7.8" %}
+{% set sha256 = "f7df91f2849e12ca2d46c92f211cf06346feacbed7c440135efa91eb7003dbb9" %}
 
 package:
   name: {{ name|lower }}
@@ -29,10 +29,10 @@ requirements:
     - ipopt <3.13
     - dask >=2
     - distributed >=2
-    - tinydb >=3.8
+    - tinydb >=4
     - scikit-learn
     - emcee <3
-    - pycalphad >=0.8.2
+    - pycalphad >=0.8.4
     - pyyaml
     - cerberus
     - bibtexparser

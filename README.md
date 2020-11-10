@@ -5,9 +5,13 @@ Home: http://espei.org
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/espei-feedstock/blob/master/LICENSE.txt)
 
 Summary: Fitting thermodynamic models with pycalphad.
+
+Development: https://github.com/PhasesResearchLab/espei
+
+Documentation: http://espei.org
 
 ESPEI, or Extensible Self-optimizing Phase Equilibria Infrastructure,
 is a tool for automated thermodynamic database development within the
