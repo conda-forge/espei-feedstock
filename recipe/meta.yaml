@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.7.8" %}
-{% set sha256 = "f7df91f2849e12ca2d46c92f211cf06346feacbed7c440135efa91eb7003dbb9" %}
+{% set version = "0.7.9" %}
+{% set sha256 = "638f6da9d4c8944eba5ac7b79ca3a854c1bd485a236f3bb352ab68e33a990119" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +18,7 @@ build:
     - espei = espei.espei_script:main
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
