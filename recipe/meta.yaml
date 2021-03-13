@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - espei = espei.espei_script:main
 
@@ -29,7 +29,7 @@ requirements:
     - dask >=2
     - distributed >=2
     - emcee <3
-    - matplotlib
+    - matplotlib-base
     - numpy
     - pycalphad >=0.8.4
     - python-symengine
