@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.7.11" %}
-{% set sha256 = "fc069a321f08f914bfb001cee1cb38d1d1e2b36adb1ee2f2452d588c8c57d452" %}
+{% set version = "0.7.12" %}
+{% set sha256 = "2a2e27da752459ae3a72f6e284b33a3d6f631ab5e9dc07d11b719f4bf44573b8" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   entry_points:
     - espei = espei.espei_script:main
 
