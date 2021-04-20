@@ -22,7 +22,7 @@ requirements:
     - python
     - setuptools
   run:
-    - python >=3.6
+    - python >=3.7
     - bibtexparser
     - cerberus
     - corner
@@ -45,8 +45,8 @@ test:
     - espei.core_utils
     - espei.datasets
     - espei.espei_script
-    - espei.mcmc
     - espei.optimizers
+    - espei.logger
     - espei.paramselect
     - espei.plot
     - espei.refdata
