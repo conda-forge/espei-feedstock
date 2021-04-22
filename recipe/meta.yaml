@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - espei = espei.espei_script:main
 
@@ -23,7 +23,6 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - bibtexparser
     - cerberus
     - corner
     - dask >=2
@@ -54,8 +53,11 @@ test:
     - espei.utils
     - pycalphad
   commands:
+    - pip check
     - espei -h
     - espei --version
+  requires:
+    - pip
 
 about:
   home: http://espei.org
