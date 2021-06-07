@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.8.3" %}
-{% set sha256 = "6b433bfada8605cd6d3cc4cae9c7f90ef5b56d9417b5af9c7f3d6e6c4a0f153a" %}
+{% set version = "0.8.4" %}
+{% set sha256 = "3890e4234216a13684486e2ab5028b9c8509f3bd9faf172a2f38ab3e065d8328" %}
 
 package:
   name: {{ name|lower }}
@@ -29,8 +29,8 @@ requirements:
     - distributed >=2
     - emcee <3
     - matplotlib-base
-    - numpy
-    - pycalphad >=0.8.4
+    - numpy >=1.20
+    - pycalphad >=0.9.0
     - python-symengine
     - pyyaml
     - scikit-learn
