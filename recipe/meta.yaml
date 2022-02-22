@@ -31,13 +31,12 @@ requirements:
     - importlib_metadata
     - matplotlib-base
     - numpy >=1.20
-    - pycalphad >=0.9.2
-    - python-symengine
+    - pycalphad >=0.10.0
+    - python-symengine >=0.9
     - pyyaml
     - setuptools_scm >=6.0
     - scikit-learn >=1.0
     - scipy
-    - sympy >=1.5.1
     - tinydb >=4
 
 test:
