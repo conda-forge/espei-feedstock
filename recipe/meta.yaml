@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.8.7" %}
-{% set sha256 = "61925fa60214023ba988bd82e330e5a0718e5142efe94648980ebbfa53a6bf81" %}
+{% set version = "0.8.8" %}
+{% set sha256 = "edf7b4e4ddf6f9baa6f45abb0fae553a5cadf41f615f0aaae18bf7bca1d7c385" %}
 
 package:
   name: {{ name|lower }}
@@ -31,7 +31,7 @@ requirements:
     - importlib_metadata
     - matplotlib-base
     - numpy >=1.20
-    - pycalphad >=0.10.0
+    - pycalphad >=0.10.1
     - python-symengine >=0.9
     - pyyaml
     - setuptools_scm >=6.0
