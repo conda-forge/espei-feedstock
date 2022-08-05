@@ -32,6 +32,7 @@ requirements:
     - matplotlib-base
     - numpy >=1.20
     - pycalphad >=0.10.1
+    - pydantic
     - python-symengine >=0.9
     - pyyaml
     - setuptools_scm >=6.0
