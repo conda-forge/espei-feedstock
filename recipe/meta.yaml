@@ -1,6 +1,6 @@
 {% set name = "espei" %}
-{% set version = "0.8.9" %}
-{% set sha256 = "4635cdd9ba80e0cd74f3696f7eb2ebeed8cfcf8c981fb0b08f3452edcaef2927" %}
+{% set version = "0.8.10" %}
+{% set sha256 = "ea2a96e2abd950492ee1a5eb89fdc77122554b69f3b069ea98739fadc73162a5" %}
 
 package:
   name: {{ name|lower }}
@@ -22,17 +22,16 @@ requirements:
     - python
     - setuptools
   run:
-    - python >=3.7
+    - python >=3.8
     - cerberus
     - corner
     - dask >=2
     - distributed >=2
     - emcee <3
-    - importlib_metadata
     - matplotlib-base
     - numpy >=1.20
-    - pycalphad >=0.10.1
-    - pydantic
+    - pycalphad >=0.10.4
+    - pydantic >=2.0
     - python-symengine >=0.9
     - pyyaml
     - setuptools_scm >=6.0
