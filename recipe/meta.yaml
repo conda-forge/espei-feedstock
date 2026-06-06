@@ -14,6 +14,7 @@ source:
 build:
   noarch: python
   number: 0
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - espei = espei.espei_script:main
 
@@ -21,6 +22,7 @@ requirements:
   host:
     - python {{ python_min }}
     - setuptools
+    - pip
   run:
     - python >={{ python_min }}
     - cerberus
