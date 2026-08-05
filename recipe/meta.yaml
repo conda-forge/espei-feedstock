@@ -1,6 +1,7 @@
 {% set name = "espei" %}
-{% set version = "0.9.0" %}
-{% set sha256 = "e7f10887feb68ba75894c57b68622cad18f919b4f823e459e94b7fef73bb00f8" %}
+{% set version = "0.9.1" %}
+{% set sha256 = "0adbc335aa1d3cf513b5684926c00d96479a77fffcef4def9cb02e965b417760" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +14,8 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - espei = espei.espei_script:main
 
@@ -21,6 +23,7 @@ requirements:
   host:
     - python {{ python_min }}
     - setuptools
+    - pip
   run:
     - python >={{ python_min }}
     - cerberus
